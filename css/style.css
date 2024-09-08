@@ -136,4 +136,5 @@ body{
 .p-list:hover{
     color: black;
     background-color: var(--clr--green);
+    cursor: pointer;
 }
