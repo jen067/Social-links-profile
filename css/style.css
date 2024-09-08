@@ -1,0 +1,139 @@
+/* CSS RESRT */
+
+/* Box sizing rules */
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+/* Remove default margin */
+body,h2,p{
+    margin: 0;
+}
+
+/* Remove list styles */
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove A elements default styles */
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+/* Make images easier to work with */
+img{
+  max-width: 100%;
+  display: block;
+}
+
+/* CSS Variable */
+:root{
+    /* Colors */
+    --clr--green: hsl(75, 94%, 57%);
+    --clr--white: hsl(0, 0%, 100%);
+    --clr--g700: hsl(0, 0%, 20%);
+    --clr--g800: hsl(0, 0%, 12%);
+    --clt--g900: hsl(0, 0%, 8%);
+
+    /* Padding */
+    --p--sm: 1rem;
+    --p--md: 1.5rem;
+    --p--lg: 2rem;
+
+    /* Font Weight */
+    --w400: 400;
+    --w600: 600;
+    --w700: 700;
+}
+
+/* Stylesheet */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.875rem;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    background-color: var(--clt--g900);
+    min-height: 100svh;
+    padding: var(--p--sm);
+}
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--p--sm) var(--p--lg);
+    color:var(--clr--white);
+    background-color: var(--clr--g800);
+    border-radius: 10px;
+    min-width: 20rem;
+}
+.profile-card>*+*{
+    margin-top: var(--p--sm);
+}
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--p--md);
+}
+.profile-info>*+*{
+    margin-top: var(--p--sm);
+}
+.info-img{
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.info-txt{
+    margin-top: var(--p--sm);
+}
+
+.info-img img{
+    width: 100%;
+}
+.avatar-name{
+    font-size: var(--p--md);
+}
+.avatar-address{
+    font-weight: var(--w600);
+    margin-top: .5rem;
+    color: var(--clr--green);
+}
+.profile-title{
+    margin-bottom: .5rem;
+    font-size: .75rem;
+}
+.profile-links{
+    display: block;
+    width: 100%;
+}
+.profile-links li+li{
+    margin-top: var(--p--sm);
+}
+.p-list{
+    font-weight: var(--w600);
+    padding: var(--p--sm);
+    background-color: var(--clr--g700);
+    border-radius: 8px;
+    transition: background-color .5s ease-out;
+}
+.p-list:hover{
+    color: black;
+    background-color: var(--clr--green);
+}
