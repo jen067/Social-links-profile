@@ -79,7 +79,7 @@ body{
     color:var(--clr--white);
     background-color: var(--clr--g800);
     border-radius: 10px;
-    min-width: 20rem;
+    max-width: 20rem;
 }
 .profile-card>*+*{
     margin-top: var(--p--sm);
